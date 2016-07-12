@@ -27,7 +27,9 @@
         "codeclimate/php-test-reporter": "dev-master"
     },
     "autoload": {
-        "classmap": ["InfyRouter.php"]
+        "psr-4": {
+            "Infy\\URI\\Routing": "src/"
+        }
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
